@@ -66,33 +66,41 @@ export default {
       name: 'store_products',
       title: 'Products',
       type: 'array',
+      // of: [
+      //   {
+      //     name: 'product',
+      //     title: 'Product',
+      //     type: 'object',
+      //     fields: [
+      //       {
+      //         name: 'product_image',
+      //         title: 'Product Image',
+      //         type: 'image',
+      //       },
+      //       {
+      //         name: 'product_name',
+      //         title: 'Product Name',
+      //         type: 'string',
+      //       },
+      //       {
+      //         name: 'product_price',
+      //         title: 'Product Name',
+      //         type: 'number',
+      //       },
+      //       {
+      //         name: 'product_description',
+      //         title: 'Product Description',
+      //         type: 'string',
+      //       },
+      //     ],
+      //   },
+      // ],
       of: [
         {
           name: 'product',
           title: 'Product',
-          type: 'object',
-          fields: [
-            {
-              name: 'product_image',
-              title: 'Product Image',
-              type: 'image',
-            },
-            {
-              name: 'product_name',
-              title: 'Product Name',
-              type: 'string',
-            },
-            {
-              name: 'product_price',
-              title: 'Product Name',
-              type: 'number',
-            },
-            {
-              name: 'product_description',
-              title: 'Product Description',
-              type: 'string',
-            },
-          ],
+          type: 'reference',
+          to: [{type: 'products'}],
         },
       ],
     },

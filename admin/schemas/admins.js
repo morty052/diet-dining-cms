@@ -19,6 +19,11 @@ export default {
       type: 'string',
     },
     {
+      name: 'admin_email',
+      title: 'Admin Email',
+      type: 'string',
+    },
+    {
       name: 'admin_active_otp',
       title: 'Admin Active OTP',
       type: 'string',
